@@ -11,3 +11,4 @@ Through the project I used HTML5 && CSS3 && JavaScript.
  * [Icomoon Docs](https://icomoon.io/#docs)
       * [Icomoon Icons](https://icomoon.io/#icons-icomoon)
  * [Material Design Icons](https://material.io/resources/icons/?style=baseline)
+ * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
