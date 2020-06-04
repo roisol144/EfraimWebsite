@@ -14,4 +14,4 @@ Through the project I used HTML5 && CSS3 && JavaScript.
  * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 
-**Thank You For Checking It Out :heart:**
+**Thank You For Checking This Out :heart:**
