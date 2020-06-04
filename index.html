@@ -16,6 +16,7 @@ Copyrights ©2020 All rights reserved to me. -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/custom-bs.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <!-- <link rel="stylesheet" href="fonts/line-icons/LineIcons.min.css"> -->
@@ -38,7 +39,7 @@ Copyrights ©2020 All rights reserved to me. -->
   </div>
 
     
-<!-- 
+
 <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -48,52 +49,58 @@ Copyrights ©2020 All rights reserved to me. -->
         </div>
       </div>
       <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
-    
+    </div> 
+
 
     <!-- NAVBAR With Dropdown SubMenu -->
     <header class="site-navbar mt-3" id="top">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <!-- <div class="site-logo col-6"><a href="index.html"></a></div> -->
-          <nav class="mx-auto site-navigation">
+          <!-- <div class="site-logo col-6"><a href="index.html"> חטמר</a></div> -->
+
+
+          <nav class="mx-auto site-navigation" id="navbar-font">
             <ul class="site-menu js-clone-nav d-none d-lg-block">
               <li><a href="index.html">הערכת מצב</a></li>
               <li><a href="about.html">הנחיות מח"ט</a></li>
               <li class="has-children">
-              <a href="portfolio.html">גדודים</a>
+              <a href="portfolio.html">כוחות</a>
               <ul class="dropdown">
               <li><a href="services.html">גדודי תע"מ</a></li>
               <li><a href="services.html">גדודי מילואים</a></li>
+              <li><a href="unit_police.html">משטרה</a></li>
+              <li><a href="unit_shabak.html">שב"כ</a></li>
               </ul>
               <li class="has-children">
-                <a href="services.html" class="nav-link active">אגפים</a>
+                <a href="services.html">אגפים</a>
                 <ul class="dropdown">
-                  <li><a href="services.html">לשכה</a></li>
-                  <li><a href="service-single.html">פלחי"ק</a></li>
-                  <li><a href="gallery.html">מודיעין</a></li>
-                  <li><a href="blog-single.html">הנדסה</a></li>
-                  <li><a href="gallery.html">אג"ם</a></li>
-                  <li><a href="gallery.html">הגמ"ר</a></li>
-                  <li><a href="testimonials.html">רפואה</a></li>
-                  <li><a href="gallery.html">איסוף קרבי</a></li>
-                  <li><a href="portfolio-single.html">משא"ן</a></li>
-                  
-                  <li><a href="faq.html">טנ"א</a></li>
-                  <li><a href="gallery.html">לוגיסטיקה</a></li>
-                  <li><a href="gallery.html">מחנה</a></li>
+                  <li><a href="unit_lishka.html">לשכה</a></li>
+                  <li><a href="unit_palhik.html">פלחי"ק</a></li>
+                  <li><a href="unit_aman.html">מודיעין</a></li>
+                  <li><a href="unit-handasa.html">הנדסה</a></li>
+                  <li><a href="unit_agam.html">אג"ם</a></li>
+                  <li><a href="unit_hag.html">הגמ"ר</a></li>
+                  <li><a href="unit-medical.html">רפואה</a></li>
+                  <li><a href="unit-esof.html">איסוף קרבי</a></li>
+                  <li><a href="unit-mash.html">משא"ן</a></li>
+                  <li><a href="unit_tene.html">טנ"א</a></li>
+                  <li><a href="unit_logi.html">לוגיסטיקה</a></li>
+                  <li><a href="unit_gash.html">גששים</a></li>
+                  <li><a href="unit_mah.html">מחנה</a></li>
                 </ul>
               </li>
               <li><a href="blog.html">פקודה שבועית</a></li>
-              <li><a href="contact.html">מערכת גזרה חכמה</a></li>
-              <li><a href="contact.html">תפיסה מבצעית</a></li>
+              <li>
+                <a href="combat-material.html" class="nav-link">למידה מבצעית</a>
+            </li>
+              <li><a href="about_us.html">אודותינו</a></li>
+              <li><a href="index.html">דף בית</a></li>
             </ul>
           </nav>
           
           <div class="col-6 site-burger-menu d-block d-lg-none text-right">
-            <a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a>
+            <a href="index.html" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a>
           </div>
-
         </div>
       </div>
     </header>
@@ -120,26 +127,31 @@ Copyrights ©2020 All rights reserved to me. -->
       </a>
 
     </section>
+
     
     <!-- About The Unit -->
     <section class="site-section about-us-section" id="about-us-section">
       <div class="container">
         <div class="row mb-5 pt-0 site-section">
           <div class="col-md-6 align-self-center">
-            <h3 class="section-title-sub text-primary" style="direction: rtl; text-align: right;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif; ">קצת עלינו</h3>
-            <h2 class="section-title mb-4" style="direction: rtl; text-align: right;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;font-size: 45px;">החטיבה המרחבית אפרים</h2>
+            <h3 class="section-title-sub text-primary" style="direction: rtl; text-align: right;font-family: Assistant; margin-right: 7px;">משימת החטמ"ר</h3>
+            <h2 class="section-title mb-4" style="direction: rtl; text-align: right;font-family: Assistant;font-size: 45px;">החטיבה המרחבית אפרים</h2>
             <div class="words-unit">
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;">בחטמ"ר אפרים הגבירו בשנה האחרונה את ההתעסקות באימונים שמטרתם לחדד את הקצה המבצעי בעמדה, בסיור ובצ'קפוסט. תחום אחד, אולי הקריטי ביותר בזמן אמת, טרם זכה לאימון מוגדר - עד עכשיו.</p>
-            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;">הכירו את אימון ההתקפה החדש של חטמ"ר אפרים, שמטרתו לאפשר למפקדי הכוח בפעילויות הסיכול הליליות של החטיבה ללמוד להתמודד עם האיומים המורכבים ביותר בתוך אוכלוסיה פלסטינית .</p>
+           <p><b> חטמ"ר אפרים תגן בגזרתה,<strong> תשבש ותסכל</strong>  פח"ע בצירים, בישובים ומברחבים המשותפים,
+             <strong> תימנע </strong> מעבר טרור לעורך מדינת ישראל, <strong>תאכוף </strong> חוק וסדר ציבורי   <strong>ותיערך למצבי הסלמה וחירום </strong>,
+           כל זאת על מנת לאפשר מרקם חיים איכותי וביטחון לתושבי הגזרה והעוברים בה.
+          </b>
+          </p>
+          </div>
+          <div class="row" id="read-more-btn">
+            <div class="col-12 text-center">
+              <a href="about_us.html"><img src="./images/btn_readmore.png" style="height: 49px; width: 170px;"></a>
+            </div>
           </div>
             <!-- <p class="mt-4"><a href="#" class="spepcial_link">Read more about us</a></p> -->
           </div>
           <div class="col-md-5 ml-auto img-overlap">
-            <div class="img-1"><img src="images/לוגואים עלינו.png" alt="Image" class="logos-efraim" style="width: 300px;height:300px;"></div>
+            <div class="img-1"><img src="images/לוגואים עלינו.png" alt="Image" class="logos-efraim" style="width: 350px;height:350px;"></div>
           </div>
           </div>
 
@@ -172,9 +184,9 @@ Copyrights ©2020 All rights reserved to me. -->
           <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0">
             <div class="d-flex align-items-center justify-content-center mb-2">
               <span class="material-icons" style="font-size:40px; margin-right: 20px;">flag</span>
-              <strong class="number" data-number="4">0</strong>
+              <strong class="number" data-number="72">0</strong>
             </div>
-            <span class="caption">מלחמות ישראל</span>
+            <span class="caption">שנים למדינה</span>
           </div>
 
             
@@ -194,18 +206,14 @@ Copyrights ©2020 All rights reserved to me. -->
             <div class="d-flex align-items-center justify-content-center mb-2">
               <div class="iconcommander mr-3"></div>
             </div>
-            <h3 class="section-title-sub text-primary" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;">הקשב המפקד</h3>
-            <h1 class="section-title mb-3" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-             'Open Sans', 'Helvetica Neue', sans-serif;font-size: 52px;">דבר המח"ט</h1>
+            <h3 class="section-title-sub text-primary" style="font-family: Assistant;">הקשב המפקד</h3>
+            <h1 class="section-title mb-3" style="font-family: Assistant; font-size: 52px;">דבר המח"ט</h1>
           </div>
         </div>
             <p class="commanderwords"> .בחטמ"ר אפרים הגבירו בשנה האחרונה את ההתעסקות באימונים שמטרתם לחדד את הקצה המבצעי בעמדה, בסיור ובצ'קפוסט </p>
             <p class="commanderwords"> .תחום אחד, אולי הקריטי ביותר בזמן אמת, טרם זכה לאימון מוגדר - עד עכשיו </p>
             <p class="commanderwords"> הכירו את אימון ההתקפה החדש של חטמ"ר אפרים, שמטרתו לאפשר למפקדי הכוח בפעילויות הסיכול הליליות של החטיבה </p>
-            <p class="commanderwords">.ללמוד להתמודד עם האיומים המורכבים</p>
-
-            
+            <p class="commanderwords">.ללמוד להתמודד עם האיומים המורכבים</p>    
           </div>
         </div>
           </section>
@@ -225,19 +233,16 @@ Copyrights ©2020 All rights reserved to me. -->
               </div>
             </div>
           <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;">מקור הכוח שלנו</h3>
-            <h1 class="section-title mb-3" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;font-size: 52px;">יכולות ומטרות</h1>
+            <h3 class="section-title-sub text-primary" style="font-family: Assistant;">מקור הכוח שלנו</h3>
+            <h1 class="section-title mb-3" style="font-family:Assistant;font-size: 52px;">תפיסת ההגנה</h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="headlines-row">
           <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
 
             <a href="service-single.html" class="block__16443 text-center d-block">
               <span class="custom-icon mx-auto"><span class="icon-line-scope d-block"></span></span>
-              <h3> סיכול ממוקד בטרור</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+              <h3 style="font-family: Hebbo;">סיכול ממוקד בטרור</h3>
             </a>
 
           </div>
@@ -245,8 +250,7 @@ Copyrights ©2020 All rights reserved to me. -->
             
             <a href="service-single.html" class="block__16443 text-center d-block">
               <span class="custom-icon mx-auto"><span class="icon-line-genius d-block"></span></span>
-              <h3>גזרה חכמה</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+              <h3 style="font-family: Hebbo;">גזרה חכמה</h3>
             </a>            
 
           </div>
@@ -254,8 +258,7 @@ Copyrights ©2020 All rights reserved to me. -->
             
             <a href="service-single.html" class="block__16443 text-center d-block">
               <span class="custom-icon mx-auto"><span class="icon-line-shield d-block"></span></span>
-              <h3>שת"פ מקצועי וחזק</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+              <h3 style="font-family: Hebbo;">שת"פ מקצועי וחזק</h3>
             </a>            
 
           </div>
@@ -263,8 +266,7 @@ Copyrights ©2020 All rights reserved to me. -->
             
             <a href="service-single.html" class="block__16443 text-center d-block">
               <span class="custom-icon mx-auto"><span class="icon-line-profile-male d-block"></span></span>
-              <h3>איכות אנושית גבוהה</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+              <h3 style="font-family: Hebbo;">איכות אנושית גבוהה</h3>
             </a>
 
           </div>
@@ -272,8 +274,7 @@ Copyrights ©2020 All rights reserved to me. -->
             
             <a href="service-single.html" class="block__16443 text-center d-block">
               <span class="custom-icon mx-auto"><span class="icon-line-happy"></span></span>
-              <h3>שמירה על מרקם חיים איכותי </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+              <h3 style="font-family: Hebbo;">שמירה על מרקם חיים איכותי </h3>
             </a>
 
           </div>
@@ -281,8 +282,7 @@ Copyrights ©2020 All rights reserved to me. -->
             
             <a href="service-single.html" class="block__16443 text-center d-block">
               <span class="custom-icon mx-auto"><span class="icon-line-toolbox d-block"></span></span>
-              <h3>ארסנל ערכים רחב</h3>
-              <p class="d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
+              <h3 style="font-family: Hebbo;">ארסנל ערכים רחב</h3>
             </a>
 
           </div>
@@ -290,7 +290,7 @@ Copyrights ©2020 All rights reserved to me. -->
 
         <div class="row">
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-primary btn-md">..קראו עוד</a>
+            <a href="#" class="btn btn-primary btn-md" style="font-family: Hebbo;">..קראו עוד</a>
           </div>
         </div>
       </div>
@@ -308,44 +308,43 @@ Copyrights ©2020 All rights reserved to me. -->
                 <div class="icon-line-pictures mr-3" style="font-size: 50px;"></div>
                 </div>
               </div>
-            <h3 class="section-title-sub text-primary" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;">הצצה אל העבודה</h3>
-            <h1 class="section-title mb-3" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;font-size: 52px;">תמונות שלנו</h1>
+            <h3 class="section-title-sub text-primary" style="font-family:Assistant;">הצצה אל העבודה</h3>
+            <h1 class="section-title mb-3" style="font-family:Assistant;font-size: 52px;">תמונות שלנו</h1>
           </div>
         </div>
 
         <div class="row justify-content-center mb-5" data-aos="fade-up">
           <div id="filters" class="filters text-center button-group col-md-7">
-            <button class="btn btn-primary active" data-filter="*">הכל</button>
-            <button class="btn btn-primary" data-filter=".web">חטיבה</button>
-            <button class="btn btn-primary" data-filter=".design">פלח"צ</button>
-            <button class="btn btn-primary" data-filter=".brand">כפיר</button>
+            <!-- change here .web=hative, *=.talmo, .design=hotz, .brand=zof  -->
+            <button class="btn btn-primary" data-filter=".hative" style="font-family: Hebbo;">מפח"ט</button>
+            <button class="btn btn-primary active" data-filter=".talmo" style="font-family: Hebbo;">טלמונים</button>
+            <button class="btn btn-primary" data-filter=".hotz" style="font-family: Hebbo;">חוצ"ש</button>
+            <button class="btn btn-primary" data-filter=".zof" style="font-family: Hebbo;">צופים</button>
           </div>
         </div>  
         
         <div id="posts" class="row no-gutter">
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item hative col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/yuv_1328.jpg" class="item-wrap">
-              <span class="icon-add"></span>
-              <img class="img-fluid" src="images/yuv_1328.jpg">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item hative col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item hative col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <a href="images/yuv_1328.jpg" class="item-wrap">
+              <span class="icon-add"></span>
+              <img class="img-fluid" src="images/yuv_1328.jpg">
+            </a>
+          </div>
+
+          <div class="item hative col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
 
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
@@ -354,56 +353,56 @@ Copyrights ©2020 All rights reserved to me. -->
 
           </div>
 
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item talmo col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item hotz col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item zof col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="portfolio-single.html" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid">
             </a>
           </div>
 
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item zof col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item hotz col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item hotz col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item zof col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
             </a>
           </div>
 
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+          <div class="item zof col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
             <a href="images/yuv_1328.jpg" class="item-wrap">
               <span class="icon-add"></span>
               <img class="img-fluid" src="images/yuv_1328.jpg">
@@ -426,73 +425,63 @@ Copyrights ©2020 All rights reserved to me. -->
               <div class="icon-line-shield mr-3" id="icon-line-shield-sec" style="font-size: 50px;"></div>
               </div>
             </div>
-            <h1 class="section-title mb-3 sec" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-            'Open Sans', 'Helvetica Neue', sans-serif;font-size: 52px;">בטיחות</h1>
+            <h1 class="section-title mb-3 sec" style="font-family:Assistant;font-size: 52px;">בטיחות</h1>
             <!-- <h2>Wow</h2> -->
             <div class="items_sec">
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">תרגילים ואימונים</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">ועדת בטיחות</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">קפ"ק קיץ/חורף</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="group margin"></div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">כניסה לתע"מ</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">תיקי מטווח</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">תב"י</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="group margin"></div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">תחקירי בטיחות</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">כנסי בטיחות</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow</p>
             </div>
             <div class="col three">
               <h1 class="icon side">></h1>
               <h1 class="feature side"><a href="#">סקר נהגים</a></h1>
-              <p class="side">Wow wow wow wow wow wow wow wow</p>
             </div>
           </div>
           </div>
     </section>
 
     
-
+    <div class="row pb-0 border-top pt-5 block__19738 section-counter"></div>
     <section class="site-section block__45439">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary" class="subhead-map">החלקים של הפאזל</h3>
-            <h2 class="section-title mb-3" class="headline-map">מפת הגזרה שלנו</h2>
+            <h3 class="section-title-sub text-primary" class="subhead-map" style="font-family: Assistant;">החלקים של הפאזל</h3>
+            <h2 class="section-title mb-3" class="headline-map" style="font-family: Assistant; font-size: 52px;" >מפת הגזרה שלנו</h2>
           </div>
         </div>
         <div class="row">
-          <div class="cyber-map"><img src="images/cybermap.png" alt="Image" class="cybermap" style="width: 800px;height:400px;"></div>
+          <div class="cyber-map"><img src="images/cybermap.png" alt="Image" class="cybermap" style="width: 800px;height:400px; margin-left: 70px;"></div>
         </div>
       </div>
     </section> 
@@ -506,7 +495,7 @@ Copyrights ©2020 All rights reserved to me. -->
       <div class="container">
         <div class="row mb-5">
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3 id="headline-footer">אתרים חיוניים</h3>
+            <h3 id="headline-footer">אתרים רלוונטיים</h3>
             <ul class="list-unstyled">
               <li><a href="#">אוגדת איו"ש</a></li>
               <li><a href="#">פיקוד מרכז</a></li>
@@ -515,29 +504,30 @@ Copyrights ©2020 All rights reserved to me. -->
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3 id="headline-footer" >חשוב שיהיה </h3>
+            <h3 id="headline-footer" >דרכ"שים </h3>
             <ul class="list-unstyled">
               <li><a href="#">דרכ"ש חטיבה</a></li>
-              <li><a href="#">יזכור</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Resources</a></li>
+              <li><a href="#">דרכ"ש גדוד צופים</a></li>
+              <li><a href="#">דרכ"ש גדוד חוצ"ש</a></li>
+              <li><a href="#">דרכ"ש נוסף</a></li>
             </ul>
           </div>
           <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3 id="headline-footer">Support</h3>
+            <h3 id="headline-footer">תמיכה</h3>
             <ul class="list-unstyled">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">מייל תמיכה באתר</a></li>
+              <li><a href="#">מייל חמ"ל תקשוב</a></li>
+              <li><a href="#">מייל חמ"ל אג"ם</a></li>
             </ul>
           </div>
         </div>
+
 
         <div class="row text-center">
           <div class="col-12">
             <p class="copyright"><small class="block">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            &copy;<script>document.write(new Date().getFullYear());</script> כל הזכויות שמורות לרועי סולומון  
+            &copy;<script>document.write(new Date().getFullYear());</script>   כל הזכויות שמורות לרועי סולומון ועדי זאבי
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </small></p>
           </div>

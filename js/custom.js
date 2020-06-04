@@ -1,15 +1,11 @@
-jQuery(function($) {
+jQuery(function ($) {
   "use strict";
 
-  $(".loader")
-    .delay(1000)
-    .fadeOut("slow");
-  $("#overlayer")
-    .delay(1000)
-    .fadeOut("slow");
+  $(".loader").delay(1000).fadeOut("slow");
+  $("#overlayer").delay(1000).fadeOut("slow");
 
-  var siteMenuClone = function() {
-    $(".js-clone-nav").each(function() {
+  var siteMenuClone = function () {
+    $(".js-clone-nav").each(function () {
       var $this = $(this);
       $this
         .clone()
@@ -17,35 +13,30 @@ jQuery(function($) {
         .appendTo(".site-mobile-menu-body");
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
       var counter = 0;
-      $(".site-mobile-menu .has-children").each(function() {
+      $(".site-mobile-menu .has-children").each(function () {
         var $this = $(this);
 
         $this.prepend('<span class="arrow-collapse collapsed">');
 
         $this.find(".arrow-collapse").attr({
           "data-toggle": "collapse",
-          "data-target": "#collapseItem" + counter
+          "data-target": "#collapseItem" + counter,
         });
 
         $this.find("> ul").attr({
           class: "collapse",
-          id: "collapseItem" + counter
+          id: "collapseItem" + counter,
         });
 
         counter++;
       });
     }, 1000);
 
-    $("body").on("click", ".arrow-collapse", function(e) {
+    $("body").on("click", ".arrow-collapse", function (e) {
       var $this = $(this);
-      if (
-        $this
-          .closest("li")
-          .find(".collapse")
-          .hasClass("show")
-      ) {
+      if ($this.closest("li").find(".collapse").hasClass("show")) {
         $this.removeClass("active");
       } else {
         $this.addClass("active");
@@ -53,7 +44,7 @@ jQuery(function($) {
       e.preventDefault();
     });
 
-    $(window).resize(function() {
+    $(window).resize(function () {
       var $this = $(this),
         w = $this.width();
 
@@ -64,7 +55,7 @@ jQuery(function($) {
       }
     });
 
-    $("body").on("click", ".js-menu-toggle", function(e) {
+    $("body").on("click", ".js-menu-toggle", function (e) {
       var $this = $(this);
       e.preventDefault();
 
@@ -78,7 +69,7 @@ jQuery(function($) {
     });
 
     // click outisde offcanvas
-    $(document).mouseup(function(e) {
+    $(document).mouseup(function (e) {
       var container = $(".site-mobile-menu");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("offcanvas-menu")) {
@@ -89,67 +80,53 @@ jQuery(function($) {
   };
   siteMenuClone();
 
-  var sitePlusMinus = function() {
-    $(".js-btn-minus").on("click", function(e) {
+  var sitePlusMinus = function () {
+    $(".js-btn-minus").on("click", function (e) {
       e.preventDefault();
-      if (
-        $(this)
-          .closest(".input-group")
-          .find(".form-control")
-          .val() != 0
-      ) {
+      if ($(this).closest(".input-group").find(".form-control").val() != 0) {
         $(this)
           .closest(".input-group")
           .find(".form-control")
           .val(
             parseInt(
-              $(this)
-                .closest(".input-group")
-                .find(".form-control")
-                .val()
+              $(this).closest(".input-group").find(".form-control").val()
             ) - 1
           );
       } else {
-        $(this)
-          .closest(".input-group")
-          .find(".form-control")
-          .val(parseInt(0));
+        $(this).closest(".input-group").find(".form-control").val(parseInt(0));
       }
     });
-    $(".js-btn-plus").on("click", function(e) {
+    $(".js-btn-plus").on("click", function (e) {
       e.preventDefault();
       $(this)
         .closest(".input-group")
         .find(".form-control")
         .val(
           parseInt(
-            $(this)
-              .closest(".input-group")
-              .find(".form-control")
-              .val()
+            $(this).closest(".input-group").find(".form-control").val()
           ) + 1
         );
     });
   };
   // sitePlusMinus();
 
-  var siteIstotope = function() {
+  var siteIstotope = function () {
     /* activate jquery isotope */
     var $container = $("#posts").isotope({
       itemSelector: ".item",
-      isFitWidth: true
+      isFitWidth: true,
     });
 
-    $(window).resize(function() {
+    $(window).resize(function () {
       $container.isotope({
-        columnWidth: ".col-sm-3"
+        columnWidth: ".col-sm-3",
       });
     });
 
     $container.isotope({ filter: "*" });
 
     // filter items on button click
-    $("#filters").on("click", "button", function(e) {
+    $("#filters").on("click", "button", function (e) {
       e.preventDefault();
       var filterValue = $(this).attr("data-filter");
       $container.isotope({ filter: filterValue });
@@ -160,8 +137,8 @@ jQuery(function($) {
 
   siteIstotope();
 
-  var fancyBoxInit = function() {
-    $(".fancybox").on("click", function() {
+  var fancyBoxInit = function () {
+    $(".fancybox").on("click", function () {
       var visibleLinks = $(".fancybox");
 
       $.fancybox.open(visibleLinks, {}, visibleLinks.index(this));
@@ -171,9 +148,9 @@ jQuery(function($) {
   };
   fancyBoxInit();
 
-  var stickyFillInit = function() {
+  var stickyFillInit = function () {
     $(window)
-      .on("resize orientationchange", function() {
+      .on("resize orientationchange", function () {
         recalc();
       })
       .resize();
@@ -188,23 +165,23 @@ jQuery(function($) {
   stickyFillInit();
 
   // site navigation section, let's the user full access for every part of the website with easy to use UI&UX design.
-  var OnePageNavigation = function() {
+  var OnePageNavigation = function () {
     var navToggler = $(".site-menu-toggle");
     $("body").on(
       "click",
       ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a",
-      function(e) {
+      function (e) {
         e.preventDefault();
 
         var hash = this.hash;
 
         $("html, body").animate(
           {
-            scrollTop: $(hash).offset().top
+            scrollTop: $(hash).offset().top,
           },
           600,
           "easeInOutCirc",
-          function() {
+          function () {
             window.location.hash = hash;
           }
         );
@@ -213,10 +190,10 @@ jQuery(function($) {
   };
   OnePageNavigation();
 
-  var counterInit = function() {
+  var counterInit = function () {
     if ($(".section-counter").length > 0) {
       $(".section-counter").waypoint(
-        function(direction) {
+        function (direction) {
           if (
             direction === "down" &&
             !$(this.element).hasClass("ftco-animated")
@@ -224,14 +201,14 @@ jQuery(function($) {
             var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(
               ","
             );
-            $(".number").each(function() {
+            $(".number").each(function () {
               var $this = $(this),
                 num = $this.data("number");
               console.log(num);
               $this.animateNumber(
                 {
                   number: num,
-                  numberStep: comma_separator_number_step
+                  numberStep: comma_separator_number_step,
                 },
                 7000
               );
@@ -246,7 +223,7 @@ jQuery(function($) {
 });
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {
+window.onscroll = function () {
   myFunction();
 };
 
@@ -265,15 +242,81 @@ function myFunction() {
   }
 }
 
-$(document).ready(function() {
-  $("body").toggleClass("night", IsNight());
-  setInterval(function() {
-    $("body").toggleClass("night", IsNight());
-  }, 60000);
+//Start of the function to slide
+
+var $slider = $(".slider"),
+  $bullets = $(".bullets");
+function calculateHeight() {
+  var height = $(".slide.active").outerHeight();
+  $slider.height(height);
+}
+
+$(window).resize(function () {
+  calculateHeight();
+  clearTimeout($.data(this, "resizeTimer"));
 });
 
-function IsNight() {
-  var d = new Date();
-  var n = d.getHours();
-  return n >= 18 || n < 6;
+function resetSlides() {
+  $(".slide.inactive").removeClass("inactiveRight").removeClass("inactiveLeft");
 }
+
+function gotoSlide($activeSlide, $slide, className) {
+  $activeSlide.removeClass("active").addClass("inactive " + className);
+  $slide.removeClass("inactive").addClass("active");
+  calculateHeight();
+  resetBullets();
+  setTimeout(resetSlides, 300);
+}
+
+$(".next").on("click", function () {
+  var $activeSlide = $(".slide.active"),
+    $nextSlide =
+      $activeSlide.next(".slide").length != 0
+        ? $activeSlide.next(".slide")
+        : $(".slide:first-child");
+  console.log($nextSlide);
+  gotoSlide($activeSlide, $nextSlide, "inactiveLeft");
+});
+$(".previous").on("click", function () {
+  var $activeSlide = $(".slide.active"),
+    $prevSlide =
+      $activeSlide.prev(".slide").length != 0
+        ? $activeSlide.prev(".slide")
+        : $(".slide:last-child");
+
+  gotoSlide($activeSlide, $prevSlide, "inactiveRight");
+});
+$(document).on("click", ".bullet", function () {
+  if ($(this).hasClass("active")) {
+    return;
+  }
+  var $activeSlide = $(".slide.active");
+  var currentIndex = $activeSlide.index();
+  var targetIndex = $(this).index();
+  console.log(currentIndex, targetIndex);
+  var $theSlide = $(".slide:nth-child(" + (targetIndex + 1) + ")");
+  gotoSlide(
+    $activeSlide,
+    $theSlide,
+    currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft"
+  );
+});
+function addBullets() {
+  var total = $(".slide").length,
+    index = $(".slide.active").index();
+  for (var i = 0; i < total; i++) {
+    var $bullet = $("<div>").addClass("bullet");
+    if (i == index) {
+      $bullet.addClass("active");
+    }
+    $bullets.append($bullet);
+  }
+}
+function resetBullets() {
+  $(".bullet.active").removeClass("active");
+  var index = $(".slide.active").index() + 1;
+  console.log(index);
+  $(".bullet:nth-child(" + index + ")").addClass("active");
+}
+addBullets();
+calculateHeight();

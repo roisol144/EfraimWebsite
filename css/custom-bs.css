@@ -10449,12 +10449,12 @@ a.text-primary:focus {
 }
 
 .text-primary-unit {
-  color: #28a745 !important;
+  color: #007bff !important;
 }
 
 a.text-primary-unit:hover,
 a.text-primary-unit:focus {
-  color: #28a745 !important;
+  color: #007bff !important;
 }
 
 .text-secondary {
