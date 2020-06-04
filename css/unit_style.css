@@ -4,6 +4,7 @@
   z-index: 1999;
   position: relative;
   width: 100%;
+  height: 50%;
   background-color: white;
 }
 .site-navbar .container-fluid {
@@ -246,7 +247,7 @@
   .dropdown
   > li.has-children
   > ul {
-  left: 100%;
+  right: 100%;
   top: 0;
 }
 .site-navbar
@@ -356,7 +357,17 @@
   text-align: center;
 }
 
-.section-divider {
+
+.section-divider-palhik {
+  background-image: url("images/palhikPic.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+}
+
+.section-divider-aman {
   background-image: url("images/amanpic.jpg");
   background-size: cover;
   background-position: center;
@@ -365,21 +376,115 @@
   padding-bottom: 50px;
 }
 
-.section-divider-2 {
-  background-image: url("images/חילוץ-עם-כלים.jpg");
+
+.section-divider-handasa {
+  background-image: url("images/Ops.jpg");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 300px;
   padding-bottom: 50px;
 }
 
-.section-divider-security {
-  background-image: url("images/כפיר-7.jpg");
+
+.section-divider-med {
+  background-image: url("images/med.jpg");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   height: 300px;
   padding-bottom: 50px;
 }
+
+
+.section-divider-esof {
+  background-image: url("images/esofPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+}
+
+
+.section-divider-mash {
+  background-image: url("images/mash_pic.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+}
+.section-divider-tene {
+  background-image: url("images/tenePic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
+.section-divider-logi {
+  background-image: url("images/logiPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
+.section-divider-hag {
+  background-image: url("images/hagPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
+.section-divider-agam {
+  background-image: url("images/agamPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
+.section-divider-lishka {
+  background-image: url("images/lishkaPic.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
+.section-divider-gash {
+  background-image: url("images/gashPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
+.section-divider-mah {
+  background-image: url("images/mahPic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  padding-bottom: 50px;
+
+}
+
 
 .sticky-wrapper .site-navbar {
   -webkit-transition: 0.3s all ease;
@@ -514,13 +619,188 @@ h4 {
   color: #000 !important;
 }
 
-#home-section {
+#subheading-combat{
+  font-family: heebo;
+  color: white;
+  font-style: italic;
+  direction: rtl;
+}
+
+#home-section-aman {
   background-image: url("./images/amanpagecover.jpg");
   background-size: cover;
 }
 
-.night #home-section {
-  background-image: url("./images/nightmode.jpg");
+#home-section-combat{
+  background-image: url("./images/combatCover.jpg");
+  background-size: cover;
+}
+
+#home-section-handasa {
+  background-image: url("./images/cover_handasa.jpg");
+  background-size: cover;
+}
+
+
+#home-section-med {
+  background-image: url("./images/med_cover2.jpg");
+  background-size: cover;
+}
+
+#home-section-esof {
+  background-image: url("./images/Esof_cover.jpg");
+  background-size: cover;
+}
+
+#home-section-mash {
+  background-image: url("./images/mash_cover.jpeg");
+  background-size: cover;
+}
+
+#home-section-tene {
+  background-image: url("./images/teneCover.jpg");
+  background-size: cover;
+}
+
+#home-section-logi {
+  background-image: url("./images/logiCover.jpeg");
+  background-size: cover;
+}
+
+#home-section-aboutus {
+  background-image: url("./images/aboutUsPic.jpeg");
+  background-size: cover;
+}
+
+
+#home-section-hag {
+  background-image: url("./images/hagCover.jpg");
+  background-size: cover;
+}
+
+#home-section-lishka {
+  background-image: url("./images/lishkaCover.jpg");
+  background-size: cover;
+}
+
+#home-section-gash {
+  background-image: url("./images/gashCover.jpg");
+  background-size: cover;
+}
+
+#home-section-palhik {
+  background-image: url("./images/palhikCover.jpg");
+  background-size: cover;
+}
+
+#home-section-agam {
+  background-image: url("./images/agamCover.jpg");
+  background-size: cover;
+}
+
+#home-section-mah {
+  background-image: url("./images/mahCover.jpg");
+  background-size: cover;
+}
+#home-section-police {
+  background-image: url("./images/PoliceCover.jpg");
+  background-size: cover;
+}
+#home-section-shabak {
+  background-image: url("./images/ShabakCover.jpg");
+  background-size: cover;
+}
+
+
+#police_scroll
+{
+  background-color: #001f42;
+}
+
+#shabak_scroll
+{
+  background-color: #333;
+}
+
+
+#palhik_scroll
+{
+  background-color: #3f7287;
+}
+
+#combat_scroll{
+  background-color: black;
+}
+
+#aman_scroll
+{
+  background-color: #28a745;
+}
+
+#handasa_scroll
+{
+  background-color: #aaa;
+}
+
+#gash_scroll
+{
+  background-color: #4d2226;
+}
+
+#aboutus_scroll
+{
+  background-color: #b3927f;
+}
+
+
+#med_scroll
+{
+  background-color: #f44336;
+}
+
+#esof_scroll
+{
+  background-color: khaki;
+}
+
+#mash_scroll
+{
+  background-color:steelblue;
+}
+
+#tene_scroll
+{
+  background-color: darkorange;
+}
+
+#logi_scroll
+{
+  background-color: #ede54e;
+}
+
+#hag_scroll
+{
+  background-color: #d15d39;
+}
+
+#agam_scroll
+{
+  background-color: #d15d39;
+}
+
+#lishka_scroll
+{
+  background-color: #2082bf;
+}
+
+#lishka_scroll
+{
+  background-color: #2082bf;
+}
+
+#test
+{
+  align-self: center;
 }
 
 /*General Welcome */
@@ -567,7 +847,7 @@ h4 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #0b7726;
+  background: #007bff;
   left: 50%;
   -webkit-transform: translate(-50%, -150%);
   -ms-transform: translate(-50%, -150%);
@@ -665,7 +945,7 @@ h4 {
 
 .section-title-sub {
   font-size: 1rem;
-  color: #28a745;
+  color: #007bff;
 }
 
 .section-hero-unit,
